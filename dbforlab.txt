@@ -1,0 +1,12 @@
+use dbforlab
+
+db.createCollection('auto')
+db.createCollection('rent')
+
+db.auto.save({autoName:"Auto1", Year:2000, Race: 80000, State:"old"})
+db.auto.save({autoName:"Auto2", Year:2005, Race: 20000, State:"old"})
+db.auto.save({autoName:"Auto3", Year:2020, Race: 100, State:"new"})
+
+db.rent.save({autoName:"Auto1", dateStart:"1603605600", dateEnd: "1606284000", cost:500})
+db.rent.save({autoName:"Auto2", dateStart:"1588316400", dateEnd: "159625200", cost:2000})
+db.rent.save({autoName:"Auto3", dateStart:"1615651200", dateEnd: "1615662000", cost:70000})
